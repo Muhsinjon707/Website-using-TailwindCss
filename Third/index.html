@@ -1,0 +1,391 @@
+<!doctype html>
+<html class="" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/index.css" />
+    <title>3 month, 8 lesson | 3-homework</title>
+
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap");
+
+      * {
+        font-family: "Nunito Sans", sans-serif;
+      }
+    </style>
+  </head>
+  <body class="bg-[#0000000E] dark:bg-[#202C36]">
+    <header
+      class="container-xl flex w-full items-center justify-between bg-white px-[80px] py-[24px] dark:bg-[#2B3844]"
+    >
+      <div class="text-2xl font-extrabold text-[#111517] dark:text-white">
+        Where in the world?
+      </div>
+      <button
+        id="button"
+        class="flex items-center justify-center gap-x-1 dark:text-white"
+      >
+        <img src="img/moon.svg" alt="" />
+        Dark Mode
+      </button>
+    </header>
+
+    <main
+      class="container-xl mx-[80px] my-[48px] flex flex-col items-center gap-y-[34px]"
+    >
+      <div class="flex w-full items-start justify-between">
+        <div
+          class="relative flex h-[56px] w-[480px] items-center justify-start gap-x-[16px] rounded-[5px] bg-white dark:bg-[#2B3844]"
+        >
+          <img class="ml-4" src="img/search.svg" alt="" />
+          <input
+            class="bg-transparent dark:text-white"
+            type="text"
+            placeholder="Search for country..."
+          />
+        </div>
+        <div class="relative flex flex-col gap-y-2">
+          <div
+            class="mb-1 flex w-[200px] items-center justify-between rounded border-none bg-white px-[24px] py-[18px] text-[14px] text-[#111517] dark:bg-[#2B3844] dark:text-white"
+          >
+            Filter by Region
+            <button id="moon-light">
+              <img src="img/bottom-arrow-dark.svg" alt="" />
+            </button>
+          </div>
+          <ul
+            class="absolute top-[65px] w-[200px] rounded border-none bg-white px-[24px] py-[18px] text-[14px] text-[#111517] dark:bg-[#2B3844]"
+          >
+            <li class="mb-[8px] text-[14px] text-[#111517] dark:text-white">
+              Africa
+            </li>
+            <li class="mb-[8px] text-[14px] text-[#111517] dark:text-white">
+              America
+            </li>
+            <li class="mb-[8px] text-[14px] text-[#111517] dark:text-white">
+              Asia
+            </li>
+            <li class="mb-[8px] text-[14px] text-[#111517] dark:text-white">
+              Europe
+            </li>
+            <li class="mb-[8px] text-[14px] text-[#111517] dark:text-white">
+              Oceania
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="flex flex-wrap items-center justify-center gap-[70px]">
+        <div
+          class="flex h-[370px] w-[270px] flex-col items-start bg-transparent dark:bg-[#2B3844]"
+        >
+          <img
+            class="w-full rounded-t-[6px]"
+            src="img/Flags/flag-germany.jpg"
+            alt=""
+          />
+          <div
+            class="mb-5 flex w-full flex-col items-start gap-y-2 bg-white py-[46px] pt-0 dark:bg-[#2B3844]"
+          >
+            <h4
+              class="mt-6 px-[20px] text-lg font-extrabold text-[#111517] dark:text-white"
+            >
+              Germany
+            </h4>
+            <div class="flex flex-col gap-y-1">
+              <p class="px-[20px] font-light text-[#111517] dark:text-white">
+                <span
+                  class="text-[14px] font-extrabold text-[#111517] dark:text-white"
+                  >Population:</span
+                >
+                81,770,900
+              </p>
+              <p class="px-[20px] font-light text-[#111517] dark:text-white">
+                <span
+                  class="text-[14px] font-extrabold text-[#111517] dark:text-white"
+                  >Region:</span
+                >
+                Europe
+              </p>
+              <p class="px-[20px] font-light text-[#111517] dark:text-white">
+                <span
+                  class="text-[14px] font-extrabold text-[#111517] dark:text-white"
+                  >Capital:</span
+                >
+                Berlin
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="flex h-[370px] w-[270px] flex-col items-start bg-transparent dark:bg-[#2B3844]"
+        >
+          <img class="w-full" src="img/Flags/flag-usa.jpg" alt="" />
+          <div
+            class="mb-5 flex w-full flex-col items-start gap-y-2 bg-white py-[46px] pt-0 dark:bg-[#2B3844]"
+          >
+            <h4
+              class="mt-6 px-[20px] text-lg font-extrabold text-[#111517] dark:text-white"
+            >
+              United States of America
+            </h4>
+            <div class="flex flex-col gap-y-1">
+              <p class="px-[20px] font-light text-[#111517] dark:text-white">
+                <span
+                  class="text-[14px] font-extrabold text-[#111517] dark:text-white"
+                  >Population:</span
+                >
+                323,947,000
+              </p>
+              <p class="px-[20px] font-light text-[#111517] dark:text-white">
+                <span
+                  class="text-[14px] font-extrabold text-[#111517] dark:text-white"
+                  >Region:</span
+                >
+                Americas
+              </p>
+              <p class="px-[20px] font-light text-[#111517] dark:text-white">
+                <span
+                  class="text-[14px] font-extrabold text-[#111517] dark:text-white"
+                  >Capital:</span
+                >
+                Washington. D C
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="flex h-[370px] w-[270px] flex-col items-start bg-transparent dark:bg-[#2B3844]"
+        >
+          <img class="w-full" src="img/Flags/flag-brazil.jpg" alt="" />
+          <div
+            class="mb-5 flex w-full flex-col items-start gap-y-2 bg-white py-[46px] pt-0 dark:bg-[#2B3844]"
+          >
+            <h4
+              class="mt-6 px-[20px] text-lg font-extrabold text-[#111517] dark:text-white"
+            >
+              Brazil
+            </h4>
+            <div class="flex flex-col gap-y-1">
+              <p class="px-[20px] font-light text-[#111517] dark:text-white">
+                <span
+                  class="text-[14px] font-extrabold text-[#111517] dark:text-white"
+                  >Population:</span
+                >
+                206,135,893
+              </p>
+              <p class="px-[20px] font-light text-[#111517] dark:text-white">
+                <span
+                  class="text-[14px] font-extrabold text-[#111517] dark:text-white"
+                  >Region:</span
+                >
+                Americas
+              </p>
+              <p class="px-[20px] font-light text-[#111517] dark:text-white">
+                <span
+                  class="text-[14px] font-extrabold text-[#111517] dark:text-white"
+                  >Capital:</span
+                >
+                Brasilia
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="flex h-[370px] w-[270px] flex-col items-start bg-transparent dark:bg-[#2B3844]"
+        >
+          <img class="w-full" src="img/Flags/flag-iceland.jpg" alt="" />
+          <div
+            class="mb-5 flex w-full flex-col items-start gap-y-2 bg-white py-[46px] pt-0 dark:bg-[#2B3844]"
+          >
+            <h4
+              class="mt-6 px-[20px] text-lg font-extrabold text-[#111517] dark:text-white"
+            >
+              Iceland
+            </h4>
+            <div class="flex flex-col gap-y-1">
+              <p class="px-[20px] font-light text-[#111517] dark:text-white">
+                <span
+                  class="text-[14px] font-extrabold text-[#111517] dark:text-white"
+                  >Population:</span
+                >
+                334,300
+              </p>
+              <p class="px-[20px] font-light text-[#111517] dark:text-white">
+                <span
+                  class="text-[14px] font-extrabold text-[#111517] dark:text-white"
+                  >Region:</span
+                >
+                Europe
+              </p>
+              <p class="px-[20px] font-light text-[#111517] dark:text-white">
+                <span
+                  class="text-[14px] font-extrabold text-[#111517] dark:text-white"
+                  >Capital:</span
+                >
+                Reykjavik
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="flex h-[370px] w-[270px] flex-col items-start bg-transparent dark:bg-[#2B3844]"
+        >
+          <img class="w-full" src="img/Flags/flag-afghanistan.jpg" alt="" />
+          <div
+            class="mb-5 flex w-full flex-col items-start gap-y-2 bg-white py-[46px] pt-0 dark:bg-[#2B3844]"
+          >
+            <h4
+              class="mt-6 px-[20px] text-lg font-extrabold text-[#111517] dark:text-white"
+            >
+              Afghanistan
+            </h4>
+            <div class="flex flex-col gap-y-1">
+              <p class="px-[20px] font-light text-[#111517] dark:text-white">
+                <span
+                  class="text-[14px] font-extrabold text-[#111517] dark:text-white"
+                  >Population:</span
+                >
+                27,657,145
+              </p>
+              <p class="px-[20px] font-light text-[#111517] dark:text-white">
+                <span
+                  class="text-[14px] font-extrabold text-[#111517] dark:text-white"
+                  >Region:</span
+                >
+                Asia
+              </p>
+              <p class="px-[20px] font-light text-[#111517] dark:text-white">
+                <span
+                  class="text-[14px] font-extrabold text-[#111517] dark:text-white"
+                  >Capital:</span
+                >
+                Kabul
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="flex h-[370px] w-[270px] flex-col items-start bg-transparent dark:bg-[#2B3844]"
+        >
+          <img class="w-full" src="img/Flags/flag-aland.jpg" alt="" />
+          <div
+            class="mb-5 flex w-full flex-col items-start gap-y-2 bg-white py-[46px] pt-0 dark:bg-[#2B3844]"
+          >
+            <h4
+              class="mt-6 px-[20px] text-lg font-extrabold text-[#111517] dark:text-white"
+            >
+              Aland Islands
+            </h4>
+            <div class="flex flex-col gap-y-1">
+              <p class="px-[20px] font-light text-[#111517] dark:text-white">
+                <span
+                  class="text-[14px] font-extrabold text-[#111517] dark:text-white"
+                  >Population:</span
+                >
+                28,875
+              </p>
+              <p class="px-[20px] font-light text-[#111517] dark:text-white">
+                <span
+                  class="text-[14px] font-extrabold text-[#111517] dark:text-white"
+                  >Region:</span
+                >
+                Europe
+              </p>
+              <p class="px-[20px] font-light text-[#111517] dark:text-white">
+                <span
+                  class="text-[14px] font-extrabold text-[#111517] dark:text-white"
+                  >Capital:</span
+                >
+                Mariehamn
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="flex h-[370px] w-[270px] flex-col items-start bg-white dark:bg-[#2B3844]"
+        >
+          <img class="w-full" src="img/Flags/flag-albania.jpg" alt="" />
+          <div
+            class="mb-5 flex w-full flex-col items-start gap-y-2 bg-white py-[46px] pt-0 dark:bg-[#2B3844]"
+          >
+            <h4
+              class="mt-6 px-[20px] text-lg font-extrabold text-[#111517] dark:text-white"
+            >
+              Albania
+            </h4>
+            <div class="flex flex-col gap-y-1">
+              <p class="px-[20px] font-light text-[#111517] dark:text-white">
+                <span
+                  class="text-[14px] font-extrabold text-[#111517] dark:text-white"
+                  >Population:</span
+                >
+                2,886,026
+              </p>
+              <p class="px-[20px] font-light text-[#111517] dark:text-white">
+                <span
+                  class="text-[14px] font-extrabold text-[#111517] dark:text-white"
+                  >Region:</span
+                >
+                Europe
+              </p>
+              <p class="px-[20px] font-light text-[#111517] dark:text-white">
+                <span
+                  class="text-[14px] font-extrabold text-[#111517] dark:text-white"
+                  >Capital:</span
+                >
+                Tirana
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="flex h-[370px] w-[270px] flex-col items-start bg-white dark:bg-[#2B3844]"
+        >
+          <img class="w-full" src="img/Flags/flag-algeria.jpg" alt="" />
+          <div
+            class="mb-5 flex w-full flex-col items-start gap-y-2 bg-white py-[46px] pt-0 dark:bg-[#2B3844]"
+          >
+            <h4
+              class="mt-6 px-[20px] text-lg font-extrabold text-[#111517] dark:text-white"
+            >
+              Iceland
+            </h4>
+            <div class="flex flex-col gap-y-1">
+              <p class="px-[20px] font-light text-[#111517] dark:text-white">
+                <span
+                  class="text-[14px] font-extrabold text-[#111517] dark:text-white"
+                  >Population:</span
+                >
+                40,400,000
+              </p>
+              <p class="px-[20px] font-light text-[#111517] dark:text-white">
+                <span
+                  class="text-[14px] font-extrabold text-[#111517] dark:text-white"
+                  >Region:</span
+                >
+                Africa
+              </p>
+              <p class="px-[20px] font-light text-[#111517] dark:text-white">
+                <span
+                  class="text-[14px] font-extrabold text-[#111517] dark:text-white"
+                  >Capital:</span
+                >
+                Algiers
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="js/app.js"></script>
+  </body>
+</html>
